@@ -1,0 +1,1951 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Montserrat Bold;
+  src: url(fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: Montserrat SemiBold;
+  src: url(fonts/Montserrat-SemiBold.ttf);
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Montserrat;
+}
+.sections {
+  overflow: hidden;
+}
+.btnmenu {
+  border: none;
+  background-color: transparent;
+  float: right;
+}
+.mainscreen {
+  position: relative;
+  height: 100vh;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.btncontactus:hover {
+  background-color: #cdba6d;
+  color: #fff;
+  transition-delay: 0.1s;
+}
+.btncontactus:hover a {
+  color: #fff;
+  transition-delay: 0.1s;
+}
+.btncontactus a {
+  color: black;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  text-decoration-line: none;
+}
+
+/*  ---------  Curtain  Menu  ----------------*/
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  background-color: #cdba6d;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #ececec;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 0;
+  right: 100px;
+  font-size: 68px;
+}
+/*-----------Curtain Menu End---------*/
+
+.headingdiv {
+  margin-top: 150px;
+}
+.heading {
+  font-family: Montserrat SemiBold;
+  font-size: 32px;
+  font-style: normal;
+  line-height: 54px;
+  text-align: left;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+  margin-top: -10px;
+}
+.line {
+  margin-bottom: 30px;
+}
+.serviceimg {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.servicetype {
+  color: rgba(52, 58, 66, 1);
+  font-family: Montserrat SemiBold;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.infoaboutservice {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.lawyerimage {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.infoaboutlawyer {
+  color: white;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+}
+.lawyername {
+  font-size: 24px;
+  font-style: normal;
+  font-family: Montserrat SemiBold;
+  line-height: 34px;
+  letter-spacing: 0em;
+}
+/*---------------Testimonials Start--------------*/
+
+.testimonialimg {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.reviewbox {
+  box-shadow: 0px 4px 20px rgba(52, 58, 66, 0.15);
+  border-radius: 5px;
+  padding: 15%;
+  margin-bottom: 30px;
+}
+.highlightedreview {
+  font-family: Montserrat Bold;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 32px;
+  color: #cdba6d;
+}
+.review {
+  font-family: Montserrat;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 35px;
+  color: #343a42;
+}
+.clientname {
+  font-family: Montserrat Bold;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #343a42;
+}
+.clientjob {
+  font-family: Montserrat;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #343a42;
+}
+.clientrow {
+  margin-top: 30px;
+}
+
+/*---------------Testimonials End--------------*/
+
+/*---------------Footer Start--------------*/
+
+.footerrow {
+  min-width: 100%;
+  min-height: 415px;
+  background: #343a42;
+  margin-top: 150px;
+}
+
+.ulfooter li {
+  padding: 15px;
+}
+.ulfooter a {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+  text-decoration-line: none;
+}
+.ulfooter a:hover {
+  text-decoration-line: underline;
+}
+
+.ulsocial li {
+  padding: 7px;
+}
+.ulsocial li:hover {
+  transform: scale(1.1);
+}
+.ulcontact a:hover {
+  text-decoration-line: underline;
+}
+
+.ulcontact li {
+  padding: 10px;
+}
+.ulcontact a {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #fff;
+  text-decoration-line: none;
+}
+.locationinfo {
+  margin-top: -45px;
+}
+.emailfooter {
+  margin-left: -30px;
+}
+.bigline {
+  height: 1px;
+  width: 100%;
+  background-color: #cdba6d;
+  margin-top: 50px;
+}
+.developer a {
+  color: white;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+/*---------------Footer End--------------*/
+
+/*----------About Us Start-----------*/
+
+.ourmission {
+  font-family: Montserrat Bold;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 35px;
+  color: #343a42;
+}
+.lineabout {
+  color: #343a42;
+  font-weight: bolder;
+}
+.aboutustext {
+  margin-top: 32px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 35px;
+  color: #343a42;
+}
+.aboutusrow {
+  margin-top: 150px;
+}
+.assistantname {
+  font-family: Montserrat Bold;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #343a42;
+}
+.assistanttitle {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #343a42;
+}
+.assistantinfo {
+  margin-top: 40px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 35px;
+  color: #343a42;
+}
+
+/*----------About Us End-----------*/
+
+/*----------Contact Us Start-----------*/
+
+.contactheader {
+  font-family: Montserrat SemiBold;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 34px;
+  text-align: center;
+  color: #343a42;
+  margin-top: 150px;
+  text-align: center;
+}
+.contactbox {
+  margin-top: 100px;
+  max-width: 100%;
+  min-height: 263.28px;
+  background: #ffffff;
+  border: 2px solid #cdba6d;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.contactusicons {
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 20px;
+  background-color: white;
+  border: #cdba6d 2px solid;
+  margin-top: -50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ulcontactus li {
+  text-align: center;
+}
+.ulcontactus a {
+  letter-spacing: 0.01em;
+  color: #343a42;
+  text-decoration-line: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 34px;
+}
+
+/*----------Contact Us End-----------*/
+
+/*-----------Common Elements Start---------*/
+
+.pagenametext {
+  font-family: Montserrat Bold;
+  font-style: normal;
+  font-size: 45px;
+  line-height: 55px;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*-----------Common Elements End---------*/
+
+/*-----------Blog Page Start-------------*/
+.blogtitle {
+  font-family: Montserrat Bold;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 32px;
+  color: #343a42;
+  margin-top: 24px;
+}
+.blogintro {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: #343a42;
+}
+.btnreadmore {
+  border: 1px solid #cdba6d;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 11px 20px;
+  margin-bottom: 30px;
+}
+.btnreadmore a {
+  text-decoration-line: none;
+  font-family: Montserrat SemiBold;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #cdba6d;
+}
+.btnreadmore:hover {
+  background-color: #cdba6d;
+}
+.btnreadmore:hover a {
+  color: #fff;
+}
+
+/*--------------------Blog Detail Start-------------------*/
+
+.borderline {
+  border-bottom: #cdba6d 1px solid;
+}
+.blogdetailtitle {
+  font-family: Montserrat Bold;
+  font-style: normal;
+  color: #343a42;
+  margin-top: 110px;
+}
+.blogauthorimage {
+  border-radius: 50%;
+  object-fit: cover;
+}
+.blogauthorname {
+  font-family: Montserrat Bold;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #343a42;
+}
+.blogauthortitle {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #343a42;
+  margin-top: -5px;
+}
+.readtime {
+  font-family: Montserrat SemiBold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #cdba6d;
+  margin-top: 45px;
+}
+.blogimage {
+  width: 711px;
+  height: 381px;
+  border-radius: 5px;
+  object-fit: cover;
+  margin-top: 16px;
+}
+.relatedarticles {
+  font-family: Montserrat Bold;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 34px;
+  color: #343a42;
+  margin-bottom: 50px;
+}
+
+.ourservicestitle {
+  font-family: Montserrat Bold;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 32px;
+  color: #ffffff;
+  margin-top: 50px;
+}
+.servicetitle {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 23px;
+  color: #ffffff;
+  margin-top: 32px;
+}
+.inputsmini {
+  width: 80%;
+  border-radius: 5px;
+  padding: 7px;
+  border: none;
+}
+.textarea {
+  width: 80%;
+  border-radius: 5px;
+  padding: 7px;
+  border: none;
+}
+
+.btnsendmini {
+  background: #cdba6d;
+  border-radius: 5px;
+  border: none;
+  width: 241px;
+  height: 41px;
+  margin-top: 35px;
+  font-family: Montserrat SemiBold;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+
+/*--------------------Blog Detail End-------------------*/
+
+/*--------------------Responsiveness Start-------------------*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .infoaboutlawyerdiv {
+    background: rgba(52, 58, 66, 1);
+    max-width: 100%;
+    height: 100%;
+    padding: 100px 50px;
+    margin-top: -5px;
+  }
+  .scrollicon {
+    display: none;
+  }
+  .serviceimg {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+  }
+  .serviceinfo {
+    background-color: #cdba6d;
+    padding: 8%;
+    margin-bottom: 50px;
+  }
+  .introductiontext p {
+    margin: 70% 0 0 3%;
+    color: white;
+    font-family: Montserrat Bold;
+    font-size: 30px;
+    font-style: normal;
+    line-height: 57px;
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
+  .logofooter {
+    margin-top: 100px;
+    margin-left: 50px;
+  }
+  .ulfooter {
+    list-style-type: none;
+    padding: 50px 0 0 0;
+    margin-left: 40px;
+  }
+  .contactfooter {
+    padding-top: 50px;
+  }
+  .ulcontact {
+    margin-top: -38px;
+    list-style-type: none;
+    margin-left: 40px;
+  }
+  .footericons {
+    margin-left: 40px;
+  }
+  .numbersfooter {
+    margin-top: -50px;
+    margin-left: -30px;
+  }
+  .ulsocial {
+    display: flex;
+    list-style-type: none;
+    padding-top: 50px;
+    float: left;
+  }
+  .copyright {
+    float: left;
+    color: white;
+    margin: 10px;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    text-align: center;
+  }
+  .developer {
+    float: left;
+    margin: 10px;
+    color: white;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    text-align: center;
+  }
+  .blogauthor {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .blogbody {
+    padding: 40px 40px 0 40px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #343a42;
+  }
+  .ourservices {
+    background-color: #343a42;
+    color: #fff;
+    max-height: 100%;
+    max-width: 100%;
+    margin-top: 150px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  label {
+    float: left;
+    margin-left: 40px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 32px;
+    color: #ffffff;
+    margin-top: 20px;
+  }
+  .btncontactus {
+    background-color: #fff;
+    height: 55px;
+    width: 200px;
+    border: 2px solid #cdba6d;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 8% 0 0 3%;
+  }
+  .overlay-content {
+    position: relative;
+    top: 17%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .overlay a {
+    padding-top: 40px;
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    font-family: Montserrat SemiBold;
+    font-style: normal;
+    font-size: 32px;
+    color: #ffffff;
+  }
+  .contactform {
+    max-width: 100%;
+    min-height: 861px;
+    background: #cdba6d;
+    border-radius: 5px;
+    margin-top: 70px;
+    padding: 10% 8%;
+  }
+  .inputs {
+    width: 100%;
+    height: 45px;
+    background: #ffffff;
+    border-radius: 5px;
+    border: none;
+    padding: 13px 10px;
+    margin-bottom: 50px;
+  }
+  #textarea {
+    width: 100%;
+    min-height: 349px;
+    background: #ffffff;
+    border-radius: 5px;
+    border: none;
+    padding: 13px 10px;
+  }
+  .btnsend {
+    width: 100%;
+    height: 60px;
+    background: #343a42;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-family: Montserrat Bold;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 34px;
+    margin-top: 33px;
+    text-align: center;
+  }
+  .ulcontactus {
+    padding: 10%;
+    list-style-type: none;
+  }
+  .aboutusbox {
+    padding: 15% 10%;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: #cdba6d;
+    border-radius: 5px;
+  }
+  .infoaboutlawyerdiv1 {
+    background: rgba(52, 58, 66, 1);
+    width: 100%;
+    height: 100%;
+    padding: 10% 15%;
+    margin-top: -10px;
+  }
+  .infoaboutlawyer1 {
+    color: white;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+  }
+  .lawyername1 {
+    font-size: 22px;
+    font-style: normal;
+    font-family: Montserrat SemiBold;
+    line-height: 34px;
+    letter-spacing: 0em;
+  }
+  .educationheader {
+    padding-top: 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 34px;
+    color: #ffffff;
+  }
+  .education {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 35px;
+    color: #ffffff;
+  }
+  .assistantbox {
+    padding: 71px 33px 60px 33px;
+  }
+  .logo_menu {
+    padding: 8% 7% 0% 6%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .infoaboutlawyerdiv {
+    background: rgba(52, 58, 66, 1);
+    max-width: 100%;
+    max-height: 624px;
+    padding: 10px;
+    margin-left: -50px;
+  }
+  .ulsocial {
+    display: flex;
+    list-style-type: none;
+    padding-top: 50px;
+    float: left;
+  }
+  .scrollicon {
+    display: none;
+  }
+  .serviceimg {
+    margin-bottom: 30px;
+  }
+  .serviceinfo {
+    background-color: #cdba6d;
+    border-radius: 0 5px 5px 0;
+    margin-left: -39px;
+    margin-bottom: 30px;
+    padding: 40px 20px 0 20px;
+  }
+  .introductiontext p {
+    /* margin: 30% 0 0 6%; */
+    margin: 280px 0 0 100px;
+    color: white;
+    font-family: Montserrat Bold;
+    font-size: 45px;
+    font-style: normal;
+    line-height: 57px;
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
+  .logofooter {
+    margin-top: 100px;
+    margin-left: 50px;
+  }
+  .ulfooter {
+    list-style-type: none;
+    padding: 50px 0 0 0;
+    margin-left: 40px;
+  }
+  .contactfooter {
+    padding-top: 50px;
+  }
+  .ulcontact {
+    margin-top: -38px;
+    list-style-type: none;
+    margin-left: 40px;
+  }
+  .footericons {
+    margin-left: 40px;
+  }
+  .numbersfooter {
+    margin-top: -50px;
+    margin-left: -30px;
+  }
+  .copyright {
+    float: left;
+    color: white;
+    margin: 10px;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    text-align: center;
+  }
+  .developer {
+    float: left;
+    margin: 10px;
+    color: white;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    text-align: center;
+  }
+  .blogauthor {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .blogbody {
+    padding: 40px 40px 0 40px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #343a42;
+  }
+  .ourservices {
+    background-color: #343a42;
+    color: #fff;
+    max-height: 1235px;
+    max-width: 100%;
+    margin-top: 150px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  label {
+    float: left;
+    margin-left: 50px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 32px;
+    color: #ffffff;
+    margin-top: 20px;
+  }
+  .btncontactus {
+    background-color: #fff;
+    height: 55px;
+    width: 200px;
+    border: 2px solid #cdba6d;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 73px 0 0 100px;
+  }
+  .overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .overlay a {
+    padding-top: 70px;
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    font-family: Montserrat SemiBold;
+    font-style: normal;
+    font-size: 45px;
+    line-height: 60px;
+    color: #ffffff;
+  }
+  .contactform {
+    max-width: 100%;
+    min-height: 861px;
+    background: #cdba6d;
+    border-radius: 5px;
+    margin-top: 70px;
+    padding: 100px 50px;
+  }
+  .inputs {
+    width: 100%;
+    height: 55px;
+    background: #ffffff;
+    border-radius: 5px;
+    border: none;
+    padding: 13px 21px;
+    margin-bottom: 50px;
+  }
+  #textarea {
+    width: 100%;
+    min-height: 349px;
+    background: #ffffff;
+    border-radius: 5px;
+    border: none;
+    padding: 13px 21px;
+  }
+  .btnsend {
+    width: 100%;
+    height: 60px;
+    background: #343a42;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-family: Montserrat Bold;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 34px;
+    margin-top: 33px;
+    text-align: center;
+  }
+  .ulcontactus {
+    padding: 45px 50px;
+    list-style-type: none;
+  }
+  .aboutusbox {
+    padding: 71px 93px 60px 93px;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: #cdba6d;
+    border-radius: 5px;
+  }
+  .infoaboutlawyerdiv1 {
+    background: rgba(52, 58, 66, 1);
+    max-width: 100%;
+    height: 624px;
+    padding: 5px 10px;
+    margin-left: -12px;
+    border-radius: 0 5px 5px 0;
+  }
+  .infoaboutlawyer1 {
+    color: white;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+  }
+  .lawyername1 {
+    font-size: 18px;
+    font-style: normal;
+    font-family: Montserrat SemiBold;
+    line-height: 34px;
+    letter-spacing: 0em;
+  }
+  .educationheader {
+    padding-top: 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 34px;
+    color: #ffffff;
+  }
+  .education {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 35px;
+    color: #ffffff;
+  }
+  .assistantbox {
+    padding: 71px 33px 60px 0;
+  }
+  .logo_menu {
+    padding: 5% 7% 1.5% 6%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .infoaboutlawyerdiv {
+    background: rgba(52, 58, 66, 1);
+    max-width: 100%;
+    height: 624px;
+    padding: 60px 40px 20px 40px;
+    margin-left: -14px;
+    border-radius: 0 5px 5px 0;
+  }
+  .ulsocial {
+    list-style-type: none;
+    padding: 50px 0 0 0;
+    float: left;
+  }
+  .scrollicon {
+    display: none;
+  }
+  .serviceimg {
+    margin-bottom: 30px;
+  }
+  .serviceinfo {
+    background-color: #cdba6d;
+    border-radius: 0 5px 5px 0;
+    margin-left: -39px;
+    margin-bottom: 30px;
+    padding: 40px 20px 0 20px;
+  }
+  .introductiontext p {
+    margin: 280px 0 0 100px;
+    color: white;
+    font-family: Montserrat Bold;
+    font-size: 45px;
+    font-style: normal;
+    line-height: 57px;
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
+  .logofooter {
+    margin-top: 100px;
+    margin-left: 50px;
+  }
+  .ulfooter {
+    list-style-type: none;
+    padding: 50px 0 0 0;
+    margin-left: 40px;
+  }
+  .contactfooter {
+    padding-top: 50px;
+  }
+  .ulcontact {
+    margin-top: -38px;
+    list-style-type: none;
+    margin-left: 40px;
+  }
+  .footericons {
+    margin-left: 40px;
+  }
+  .numbersfooter {
+    margin-top: -50px;
+    margin-left: -30px;
+  }
+  .copyright {
+    float: left;
+    color: white;
+    margin: 20px;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    text-align: center;
+  }
+  .developer {
+    float: right;
+    margin: 20px;
+    color: white;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    text-align: center;
+  }
+  .blogauthor {
+    margin-left: -50px;
+    margin-top: 10px;
+  }
+  .blogbody {
+    padding: 40px 40px 0 40px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #343a42;
+  }
+  .ourservices {
+    background-color: #343a42;
+    color: #fff;
+    max-height: 1235px;
+    max-width: 100%;
+    margin-top: 150px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  label {
+    float: left;
+    margin-left: 70px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 32px;
+    color: #ffffff;
+    margin-top: 20px;
+  }
+  .btncontactus {
+    background-color: #fff;
+    height: 55px;
+    width: 200px;
+    border: 2px solid #cdba6d;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 73px 0 0 100px;
+  }
+  .overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .overlay a {
+    padding-top: 70px;
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    font-family: Montserrat SemiBold;
+    font-style: normal;
+    font-size: 45px;
+    line-height: 60px;
+    color: #ffffff;
+  }
+  .contactform {
+    max-width: 100%;
+    min-height: 861px;
+    background: #cdba6d;
+    border-radius: 5px;
+    margin-top: 70px;
+    padding: 100px 80px;
+  }
+  .inputs {
+    width: 100%;
+    height: 55px;
+    background: #ffffff;
+    border-radius: 5px;
+    border: none;
+    padding: 13px 21px;
+    margin-bottom: 50px;
+  }
+  #textarea {
+    width: 100%;
+    min-height: 349px;
+    background: #ffffff;
+    border-radius: 5px;
+    border: none;
+    padding: 13px 21px;
+  }
+  .btnsend {
+    width: 241.65px;
+    height: 60px;
+    background: #343a42;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-family: Montserrat Bold;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 34px;
+    margin-top: 33px;
+    float: right;
+  }
+  .ulcontactus {
+    padding: 45px 50px;
+    list-style-type: none;
+  }
+  .aboutusimage {
+    margin: -20px 0 0 90px;
+  }
+  .aboutusbox {
+    padding: 71px 93px 60px 93px;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: #cdba6d;
+    border-radius: 5px;
+  }
+  .infoaboutlawyerdiv1 {
+    background: rgba(52, 58, 66, 1);
+    max-width: 100%;
+    height: 624px;
+    padding: 5px 10px;
+    margin-left: -12px;
+    border-radius: 0 5px 5px 0;
+  }
+  .infoaboutlawyer1 {
+    color: white;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+  }
+  .lawyername1 {
+    font-size: 22px;
+    font-style: normal;
+    font-family: Montserrat SemiBold;
+    line-height: 34px;
+    letter-spacing: 0em;
+  }
+  .educationheader {
+    padding-top: 20px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 34px;
+    color: #ffffff;
+  }
+  .education {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 35px;
+    color: #ffffff;
+  }
+  .assistantbox {
+    padding: 71px 93px 60px 0;
+  }
+  .logo_menu {
+    padding: 5% 7% 1.5% 6%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .infoaboutlawyerdiv {
+    background: rgba(52, 58, 66, 1);
+    max-width: 100%;
+    height: 624px;
+    padding: 90px 100px;
+    margin-left: -42px;
+    border-radius: 0 5px 5px 0;
+  }
+  .ulsocial {
+    display: inline;
+    list-style-type: none;
+    padding: 140px 100px 0 100px;
+    float: right;
+  }
+  .scrollicon {
+    margin-top: 20%;
+    display: block;
+  }
+  .serviceinfo {
+    background-color: #cdba6d;
+    border-radius: 0 5px 5px 0;
+    margin-left: -13px;
+    padding: 20px 10px 0 10px;
+  }
+  .introductiontext p {
+    margin: 280px 0 0 100px;
+    color: white;
+    font-family: Montserrat Bold;
+    font-size: 45px;
+    font-style: normal;
+    line-height: 57px;
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
+  .logofooter {
+    margin-top: 180px;
+    margin-left: 100px;
+  }
+  .ulfooter {
+    list-style-type: none;
+    padding: 130px 0 0 0;
+    margin-left: -40px;
+  }
+  .contactfooter {
+    padding-top: 100px;
+  }
+  .numbersfooter {
+    padding-left: 80px;
+    padding-top: 150px;
+  }
+  .ulcontact {
+    margin-top: -38px;
+    list-style-type: none;
+    margin-left: -30px;
+  }
+  .footericons {
+    margin-left: -30px;
+  }
+  .copyright {
+    float: left;
+    color: white;
+    margin: 20px 0 20px 100px;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    text-align: center;
+  }
+  .developer {
+    float: right;
+    margin: 20px 100px 20px 0;
+    color: white;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    text-align: center;
+  }
+  .blogauthor {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .blogbody {
+    padding: 88px 110px 0 0;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #343a42;
+  }
+  .ourservices {
+    background-color: #343a42;
+    color: #fff;
+    max-height: 1300px;
+    max-width: 100%;
+    margin-top: 150px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  label {
+    float: left;
+    margin-left: 30px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 32px;
+    color: #ffffff;
+    margin-top: 20px;
+  }
+  .btncontactus {
+    background-color: #fff;
+    height: 55px;
+    width: 200px;
+    border: 2px solid #cdba6d;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 73px 0 0 100px;
+  }
+  .overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .overlay a {
+    padding-top: 70px;
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    font-family: Montserrat SemiBold;
+    font-style: normal;
+    font-size: 45px;
+    line-height: 60px;
+    color: #ffffff;
+  }
+  .contactform {
+    max-width: 100%;
+    min-height: 861px;
+    background: #cdba6d;
+    border-radius: 5px;
+    margin-top: 70px;
+    padding: 100px 80px;
+  }
+  .inputs {
+    width: 100%;
+    height: 55px;
+    background: #ffffff;
+    border-radius: 5px;
+    border: none;
+    padding: 13px 21px;
+    margin-bottom: 50px;
+  }
+  #textarea {
+    width: 100%;
+    min-height: 349px;
+    background: #ffffff;
+    border-radius: 5px;
+    border: none;
+    padding: 13px 21px;
+  }
+  .btnsend {
+    width: 241.65px;
+    height: 60px;
+    background: #343a42;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-family: Montserrat Bold;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 34px;
+    margin-top: 33px;
+    float: right;
+  }
+  .ulcontactus {
+    padding: 30px;
+    list-style-type: none;
+  }
+  .aboutusimage {
+    margin-left: -70px;
+    margin-top: 20px;
+  }
+  .aboutusbox {
+    padding: 71px 93px 60px 93px;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: #cdba6d;
+    border-radius: 5px;
+  }
+  .infoaboutlawyerdiv1 {
+    background: rgba(52, 58, 66, 1);
+    max-width: 100%;
+    height: 624px;
+    padding: 40px;
+    margin-left: -42px;
+    border-radius: 0 5px 5px 0;
+  }
+  .infoaboutlawyer1 {
+    color: white;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+  }
+  .lawyername1 {
+    font-size: 24px;
+    font-style: normal;
+    font-family: Montserrat SemiBold;
+    line-height: 34px;
+    letter-spacing: 0em;
+  }
+  .educationheader {
+    padding-top: 20px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 34px;
+    color: #ffffff;
+  }
+  .education {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 35px;
+    color: #ffffff;
+  }
+  .assistantbox {
+    padding: 71px 93px 60px 0;
+  }
+  .logo_menu {
+    padding: 3% 7% 1.5% 6%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .infoaboutlawyerdiv {
+    background: rgba(52, 58, 66, 1);
+    max-width: 100%;
+    height: 624px;
+    padding: 150px 100px;
+    margin-left: -42px;
+    border-radius: 0 5px 5px 0;
+  }
+  .ulsocial {
+    display: flex;
+    list-style-type: none;
+    padding: 180px 100px 0 0;
+    float: right;
+  }
+  .scrollicon {
+    margin-top: 10%;
+    display: block;
+  }
+  .serviceinfo {
+    background-color: #cdba6d;
+    border-radius: 0 5px 5px 0;
+    margin-left: -13px;
+    padding: 29px 41px 0 41px;
+  }
+  .introductiontext p {
+    margin: 218px 0 0 100px;
+    color: white;
+    font-family: Montserrat Bold;
+    font-size: 45px;
+    font-style: normal;
+    line-height: 57px;
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
+  .logofooter {
+    margin-top: 180px;
+    margin-left: 100px;
+  }
+  .ulfooter {
+    list-style-type: none;
+    padding: 130px 0 0 0;
+    margin-left: -40px;
+  }
+  .contactfooter {
+    padding-top: 100px;
+  }
+  .numbersfooter {
+    padding-left: 80px;
+    padding-top: 220px;
+  }
+  .ulcontact {
+    margin-top: -38px;
+    list-style-type: none;
+    margin-left: -30px;
+  }
+  .footericons {
+    margin-left: -30px;
+  }
+  .copyright {
+    float: left;
+    color: white;
+    margin: 20px 0 20px 100px;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    text-align: center;
+  }
+  .developer {
+    float: right;
+    margin: 20px 100px 20px 0;
+    color: white;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    text-align: center;
+  }
+  .blogauthor {
+    margin-left: -50px;
+    margin-top: 10px;
+  }
+  .blogbody {
+    padding: 88px 110px 0 0;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #343a42;
+  }
+  .ourservices {
+    background-color: #343a42;
+    color: #fff;
+    max-height: 1235px;
+    max-width: 100%;
+    margin-top: 150px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  label {
+    float: left;
+    margin-left: 40px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 32px;
+    color: #ffffff;
+    margin-top: 20px;
+  }
+  .btncontactus {
+    background-color: #fff;
+    height: 55px;
+    width: 200px;
+    border: 2px solid #cdba6d;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 73px 0 0 100px;
+  }
+  .overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .overlay a {
+    padding-top: 70px;
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    font-family: Montserrat SemiBold;
+    font-style: normal;
+    font-size: 45px;
+    line-height: 60px;
+    color: #ffffff;
+  }
+  .contactform {
+    max-width: 100%;
+    min-height: 861px;
+    background: #cdba6d;
+    border-radius: 5px;
+    margin-top: 70px;
+    padding: 100px 180px;
+  }
+  .inputs {
+    width: 100%;
+    height: 55px;
+    background: #ffffff;
+    border-radius: 5px;
+    border: none;
+    padding: 13px 21px;
+    margin-bottom: 50px;
+  }
+  #textarea {
+    width: 100%;
+    min-height: 349px;
+    background: #ffffff;
+    border-radius: 5px;
+    border: none;
+    padding: 13px 21px;
+  }
+  .btnsend {
+    width: 241.65px;
+    height: 60px;
+    background: #343a42;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-family: Montserrat Bold;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 34px;
+    margin-top: 33px;
+    float: right;
+  }
+  .ulcontactus {
+    padding: 45px 50px;
+    list-style-type: none;
+  }
+  .aboutusimage {
+    margin-left: -70px;
+    margin-top: 20px;
+  }
+  .aboutusbox {
+    padding: 71px 93px 60px 93px;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: #cdba6d;
+    border-radius: 5px;
+  }
+  .infoaboutlawyerdiv1 {
+    background: rgba(52, 58, 66, 1);
+    max-width: 100%;
+    height: 624px;
+    padding: 70px 85px;
+    margin-left: -42px;
+    border-radius: 0 5px 5px 0;
+  }
+  .infoaboutlawyer1 {
+    color: white;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+  }
+  .lawyername1 {
+    font-size: 24px;
+    font-style: normal;
+    font-family: Montserrat SemiBold;
+    line-height: 34px;
+    letter-spacing: 0em;
+  }
+  .educationheader {
+    padding-top: 20px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 34px;
+    color: #ffffff;
+  }
+  .education {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 35px;
+    color: #ffffff;
+  }
+  .assistantbox {
+    padding: 71px 93px 60px 0;
+  }
+  .logo_menu {
+    padding: 3% 7% 1.5% 6%;
+  }
+}
+
+/* Super Extra large devices XXL (large laptops and desktops, 1600px and up) */
+@media only screen and (min-width: 1600px) {
+  .scrollicon {
+    margin-top: 10em;
+    display: block;
+  }
+  .introductiontext p {
+    margin: 280px 0 0 100px;
+    color: white;
+    font-family: Montserrat Bold;
+    font-size: 45px;
+    font-style: normal;
+    line-height: 57px;
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
+  .blogauthor {
+    margin-left: -50px;
+    margin-top: 10px;
+  }
+  .blogbody {
+    padding: 88px 110px 0 0;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #343a42;
+  }
+  .ourservices {
+    background-color: #343a42;
+    color: #fff;
+    max-height: 1235px;
+    max-width: 100%;
+    margin-top: 150px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  label {
+    float: left;
+    margin-left: 40px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 32px;
+    color: #ffffff;
+    margin-top: 20px;
+  }
+  .btncontactus {
+    background-color: #fff;
+    height: 55px;
+    width: 200px;
+    border: 2px solid #cdba6d;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 73px 0 0 100px;
+  }
+  .overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .overlay a {
+    padding-top: 70px;
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    font-family: Montserrat SemiBold;
+    font-style: normal;
+    font-size: 45px;
+    line-height: 60px;
+    color: #ffffff;
+  }
+  .contactform {
+    max-width: 100%;
+    min-height: 861px;
+    background: #cdba6d;
+    border-radius: 5px;
+    margin-top: 70px;
+    padding: 100px 180px;
+  }
+  .inputs {
+    width: 100%;
+    height: 55px;
+    background: #ffffff;
+    border-radius: 5px;
+    border: none;
+    padding: 13px 21px;
+    margin-bottom: 50px;
+  }
+  #textarea {
+    width: 100%;
+    min-height: 349px;
+    background: #ffffff;
+    border-radius: 5px;
+    border: none;
+    padding: 13px 21px;
+  }
+  .btnsend {
+    width: 241.65px;
+    height: 60px;
+    background: #343a42;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-family: Montserrat Bold;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 34px;
+    margin-top: 33px;
+    float: right;
+  }
+  .ulcontactus {
+    padding: 45px 50px;
+    list-style-type: none;
+  }
+  .aboutusimage {
+    margin-left: -70px;
+    margin-top: 20px;
+  }
+  .aboutusbox {
+    padding: 71px 93px 60px 93px;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: #cdba6d;
+    border-radius: 5px;
+  }
+  .infoaboutlawyerdiv1 {
+    background: rgba(52, 58, 66, 1);
+    max-width: 100%;
+    height: 624px;
+    padding: 70px 85px;
+    margin-left: -42px;
+    border-radius: 0 5px 5px 0;
+  }
+  .infoaboutlawyer1 {
+    color: white;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+  }
+  .lawyername1 {
+    font-size: 24px;
+    font-style: normal;
+    font-family: Montserrat SemiBold;
+    line-height: 34px;
+    letter-spacing: 0em;
+  }
+  .educationheader {
+    padding-top: 20px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 34px;
+    color: #ffffff;
+  }
+  .education {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 35px;
+    color: #ffffff;
+  }
+  .assistantbox {
+    padding: 71px 93px 60px 0;
+  }
+  .logo_menu {
+    padding: 3% 7% 1.5% 6%;
+  }
+}
