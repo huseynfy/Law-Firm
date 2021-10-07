@@ -1,2 +1,2 @@
 # Lawyer
-A website for a law office located in Belmont, CA.
+A website for a law office located in San Mateo, CA.
